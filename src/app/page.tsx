@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, XCircle, Rocket, Code, Brain, Target, Zap, ChevronRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, XCircle, Rocket, Code, Brain, Target, Zap, ChevronRight, Youtube } from "lucide-react";
 
 export default function Home() {
   return (
@@ -111,7 +111,7 @@ export default function Home() {
               <p>
                 I built <strong>Voltnestx</strong> to be the partner I wish I had. We aren't just "devs for hire." We are your co-builders. We use AI to move fast, but we use human expertise to build right. My goal is simple: <strong>Get you to revenue, fast.</strong>
               </p>
-              <div style={{ marginTop: '2rem' }}>
+              <div style={{ marginTop: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <Image
                   src="/images/ritwik.jpg"
                   alt="Signature"
@@ -120,6 +120,9 @@ export default function Home() {
                   className="rounded-full"
                   style={{ width: '64px', height: '64px', objectFit: 'cover', borderRadius: '50%', border: '2px solid var(--border)' }}
                 />
+                <a href="https://www.youtube.com/@Ritwik8908" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary)', fontSize: '0.875rem' }}>
+                  <Youtube size={20} color="#ff0000" /> Watch my journey
+                </a>
               </div>
             </div>
             <div className="grid grid-cols-2" style={{ gap: '1rem' }}>
@@ -330,8 +333,11 @@ export default function Home() {
 
       {/* Footer */}
       <footer style={{ padding: '2rem 0', borderTop: '1px solid var(--border)', textAlign: 'center', color: 'var(--secondary)', fontSize: '0.875rem' }}>
-        <div className="container">
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
           <p>&copy; {new Date().getFullYear()} Voltnestx. Founded by Ritwik Raj.</p>
+          <a href="https://www.youtube.com/@Ritwik8908" target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--secondary)', fontSize: '0.875rem' }}>
+            <Youtube size={16} /> Subscribe on YouTube
+          </a>
         </div>
       </footer>
     </main>
