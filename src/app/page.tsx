@@ -151,6 +151,112 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Our Team */}
+      <section className="section">
+        <div className="container">
+          <div className="text-center" style={{ marginBottom: '4rem' }}>
+            <span style={{ color: 'var(--accent)', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.875rem' }}>Our Team</span>
+            <h2>Meet the Builders</h2>
+            <p className="text-lg" style={{ marginTop: '1rem' }}>The people behind your success</p>
+          </div>
+
+          <div className="grid grid-cols-3" style={{ gap: '2rem', maxWidth: '1100px', margin: '0 auto' }}>
+            {/* Ritwik Raj */}
+            <div className="card" style={{ textAlign: 'center', padding: '1.5rem' }}>
+              <div style={{
+                position: 'relative',
+                width: '160px',
+                height: '160px',
+                margin: '0 auto 1.5rem',
+                borderRadius: '50%',
+                overflow: 'hidden',
+                border: '3px solid var(--accent)',
+                boxShadow: '0 10px 30px rgba(59, 130, 246, 0.3)'
+              }}>
+                <Image
+                  src="/images/ritwik.jpg"
+                  alt="Ritwik Raj"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>Ritwik Raj</h3>
+              <p style={{ color: 'var(--accent)', fontWeight: '600', marginBottom: '0.75rem', fontSize: '0.9rem' }}>Founder & Venture Builder</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--secondary)', lineHeight: '1.5' }}>
+                Leading the vision and execution, transforming ideas into market-ready products with AI-powered development.
+              </p>
+              <div style={{ marginTop: '1rem' }}>
+                <a href="https://www.youtube.com/@Ritwik8908" target="_blank" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent)', fontSize: '0.8rem' }}>
+                  <Youtube size={16} color="#ff0000" /> Watch on YouTube
+                </a>
+              </div>
+            </div>
+
+            {/* Aamir Taiman */}
+            <div className="card" style={{ textAlign: 'center', padding: '1.5rem' }}>
+              <div style={{
+                position: 'relative',
+                width: '160px',
+                height: '160px',
+                margin: '0 auto 1.5rem',
+                borderRadius: '50%',
+                overflow: 'hidden',
+                border: '3px solid var(--accent)',
+                boxShadow: '0 10px 30px rgba(59, 130, 246, 0.3)'
+              }}>
+                <Image
+                  src="/images/aamir.jpg"
+                  alt="Aamir Taiman"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>Aamir Taiman</h3>
+              <p style={{ color: 'var(--accent)', fontWeight: '600', marginBottom: '0.75rem', fontSize: '0.9rem' }}>Venture Partner</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--secondary)', lineHeight: '1.5' }}>
+                Bringing expertise and innovation to help founders build and scale their ventures with cutting-edge solutions.
+              </p>
+              <div style={{ marginTop: '1rem' }}>
+                <a href="mailto:aamirtaiman.official@gmail.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent)', fontSize: '0.8rem' }}>
+                  ✉️ Get in touch
+                </a>
+              </div>
+            </div>
+
+            {/* Ashish Singh */}
+            <div className="card" style={{ textAlign: 'center', padding: '1.5rem' }}>
+              <div style={{
+                position: 'relative',
+                width: '160px',
+                height: '160px',
+                margin: '0 auto 1.5rem',
+                borderRadius: '50%',
+                overflow: 'hidden',
+                border: '3px solid var(--accent)',
+                boxShadow: '0 10px 30px rgba(59, 130, 246, 0.3)'
+              }}>
+                <Image
+                  src="/images/ashish.jpg"
+                  alt="Ashish Singh"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '0.25rem' }}>Ashish Singh</h3>
+              <p style={{ color: 'var(--accent)', fontWeight: '600', marginBottom: '0.75rem', fontSize: '0.9rem' }}>Venture Partner</p>
+              <p style={{ fontSize: '0.85rem', color: 'var(--secondary)', lineHeight: '1.5' }}>
+                Strategic growth expert specializing in market positioning and helping founders reach their first 100 customers.
+              </p>
+              <div style={{ marginTop: '1rem' }}>
+                <a href="mailto:clickproagency.org@gmail.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', color: 'var(--accent)', fontSize: '0.8rem' }}>
+                  ✉️ Get in touch
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* The Problem */}
       <section className="section">
         <div className="container text-center" style={{ maxWidth: '800px' }}>
