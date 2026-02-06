@@ -58,38 +58,55 @@ export default function Home() {
       <section className="section" style={{ borderTop: '1px solid var(--border)' }}>
         <div className="container">
           <Reveal>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '4rem', alignItems: 'center' }}>
               <div>
-                <h2 className="gradient-text">Execution is the <br /><span className="highlight">only thing that matters.</span></h2>
-                <p>
+                <span className="accent-text" style={{ fontSize: '0.75rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Vision</span>
+                <h2 className="gradient-text" style={{ marginTop: '0.5rem' }}>Execution is the <br /><span className="highlight">only thing that matters.</span></h2>
+                <p style={{ fontSize: '1.125rem' }}>
                   I built Voltnestx to be the partner I wish I had. We aren't just devs for hire. We are your co-builders. We use AI to move fast, and human expertise to build right.
                 </p>
-                <div style={{ marginTop: '2rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                  <Image
-                    src="/images/ritwik.jpg"
-                    alt="Ritwik"
-                    width={48}
-                    height={48}
-                    style={{ borderRadius: '50%', border: '1px solid var(--accent)' }}
-                  />
-                  <div>
-                    <p style={{ margin: 0, fontWeight: '500', color: 'white' }}>Ritwik Raj</p>
-                    <p style={{ margin: 0, fontSize: '0.75rem' }}>Founder, Voltnestx</p>
-                  </div>
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '3rem' }}>
+                  {[
+                    { icon: Brain, title: "AI Native" },
+                    { icon: Target, title: "Execution First" },
+                    { icon: Code, title: "In-House Team" },
+                    { icon: Zap, title: "90-Day Sprint" }
+                  ].map((item) => (
+                    <div key={item.title} style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                      <div className="glass" style={{ padding: '0.5rem', borderRadius: '8px' }}>
+                        <item.icon size={18} color="var(--accent)" />
+                      </div>
+                      <span style={{ fontSize: '0.875rem', fontWeight: '500' }}>{item.title}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
-                {[
-                  { icon: Brain, title: "AI Native" },
-                  { icon: Target, title: "Execution First" },
-                  { icon: Code, title: "In-House Team" },
-                  { icon: Zap, title: "90-Day Sprint" }
-                ].map((item) => (
-                  <div key={item.title} className="card" style={{ padding: '1.5rem' }}>
-                    <item.icon size={24} color="var(--accent)" style={{ marginBottom: '1rem' }} />
-                    <h3 style={{ margin: 0 }}>{item.title}</h3>
+
+              <div style={{ position: 'relative' }}>
+                <div className="float-anim" style={{
+                  position: 'relative',
+                  borderRadius: 'var(--radius-lg)',
+                  overflow: 'hidden',
+                  border: '1px solid var(--border)',
+                  aspectRatio: '0.85',
+                  boxShadow: '0 20px 40px rgba(0,0,0,0.4)'
+                }}>
+                  <Image
+                    src="/images/ritwik.jpg"
+                    alt="Ritwik Raj"
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                  <div style={{
+                    position: 'absolute',
+                    bottom: 0, left: 0, right: 0,
+                    padding: '1.5rem',
+                    background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)'
+                  }}>
+                    <p style={{ margin: 0, fontWeight: '600', color: 'white' }}>Ritwik Raj</p>
+                    <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--accent)' }}>Founder & Chief Architect</p>
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </Reveal>
