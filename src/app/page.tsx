@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main style={{ position: 'relative', overflowX: 'hidden' }}>
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8490513657943266"
-     crossorigin="anonymous"></script>
+     crossOrigin="anonymous"></script>
       <div className="bg-dot-grid" />
       <BackgroundMesh />
 
